@@ -1,0 +1,18 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - SVG
+/*-----------------------------------------------------------------------------------*/
+
+.visualmodo-elements-svg {
+  &.visualmodo-elements-svg-align-left {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &.visualmodo-elements-svg-align-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &.visualmodo-elements-svg-align-center {
+    display: flex;
+    justify-content: center;
+  }
+}

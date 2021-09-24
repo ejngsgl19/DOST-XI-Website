@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - Progress Bar
+/*-----------------------------------------------------------------------------------*/
+
+.visualmodo-elements-progress-bar {
+  display: flex;
+  align-items: center;
+  .visualmodo-elements-progress-bar-inner {
+    width: 100%;
+  }
+  .visualmodo-elements-progress-bar-icon {
+    margin-right: 16px;
+    font-size: 32px;
+  }
+  .visualmodo-elements-progress-bar-inner {
+    #visualmodoElementsProgressBar {
+      width: 100%;
+      height: 16px;
+      position: relative;
+    }
+    svg {
+      display: block;
+      margin-top: 8px;
+    }
+    .progress-bar-rounded svg {
+      border-radius: 3px;
+    }
+    .progress-bar-round svg {
+      border-radius: 100px;
+    }
+  }
+}

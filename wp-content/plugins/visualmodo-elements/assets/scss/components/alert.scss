@@ -1,0 +1,33 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - Alert
+/*-----------------------------------------------------------------------------------*/
+
+.visualmodo-elements-alert {
+  padding: 20px;
+  color: white;
+  &.visualmodo-elements-alert-success {
+    background-color: #4CAF50;
+  }
+  &.visualmodo-elements-alert-info {
+    background-color: #2196F3;
+  }
+  &.visualmodo-elements-alert-warning {
+    background-color: #ff9800;
+  }
+  &.visualmodo-elements-alert-danger {
+    background-color: #f44336;
+  }
+  .visualmodo-elements-alert-close-button {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: black;
+    }
+  }
+}

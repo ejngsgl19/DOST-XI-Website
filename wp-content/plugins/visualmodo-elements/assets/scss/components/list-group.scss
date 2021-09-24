@@ -1,0 +1,98 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Component - List Group
+/*-----------------------------------------------------------------------------------*/
+
+.visualmodo-elements-list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  &.visualmodo-elements-direction-vertical {
+    &.visualmodo-elements-separator-lines .visualmodo-elements-list-group-item {
+      border-bottom: 1px solid #eee;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+    &.visualmodo-elements-borders-separator-lines {
+      border: 1px solid #eee;
+      .visualmodo-elements-list-group-item {
+        border-bottom: 1px solid #eee;
+        background-color: #fff;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  &.visualmodo-elements-direction-horizontal.visualmodo-elements-borders-separator-lines .visualmodo-elements-list-group-item {
+    border: 1px solid #eee;
+    background-color: #fff;
+    margin-right: -1px;
+  }
+  &.visualmodo-elements-direction-vertical.visualmodo-elements-borders-rounded-corners-separator-lines {
+    border: 1px solid #eee;
+    border-radius: .25rem;
+    .visualmodo-elements-list-group-item {
+      border-bottom: 1px solid #eee;
+      background-color: #fff;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+  &.visualmodo-elements-direction-horizontal {
+    &.visualmodo-elements-borders-rounded-corners-separator-lines .visualmodo-elements-list-group-item {
+      border: 1px solid #eee;
+      background-color: #fff;
+      margin-right: -1px;
+      &:first-child {
+        border-top-left-radius: .25rem;
+        border-bottom-left-radius: .25rem;
+      }
+      &:last-child {
+        border-top-right-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+      }
+    }
+    flex-direction: row;
+    max-width: 100%;
+  }
+}
+
+.visualmodo-elements-align-left {
+  justify-content: flex-start;
+}
+
+.visualmodo-elements-align-right {
+  justify-content: flex-end;
+}
+
+.visualmodo-elements-align-center {
+  justify-content: center;
+}
+
+.visualmodo-elements-list-group {
+  .visualmodo-elements-list-group-item i {
+    padding-right: .75rem;
+  }
+  &.visualmodo-elements-list-group-item-text .visualmodo-elements-list-group-item {
+    cursor: default;
+  }
+  &.visualmodo-elements-list-group-item-link .visualmodo-elements-list-group-item {
+    cursor: pointer;
+    &:hover {
+      background-color: #f8f9fa;
+    }
+    &:active {
+      background-color: #e9ecef;
+    }
+  }
+  .visualmodo-elements-list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    text-decoration: none;
+    color: #212529;
+  }
+}

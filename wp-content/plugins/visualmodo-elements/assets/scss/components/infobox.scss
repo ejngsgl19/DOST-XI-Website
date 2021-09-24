@@ -1,0 +1,53 @@
+/*-----------------------------------------------------------------------------------*/
+/*  *.  Infobox 
+/*-----------------------------------------------------------------------------------*/
+
+.visualmodo-elements-infobox {
+	display: flex;
+}
+
+.visualmodo-elements-infobox .infobox-icon {
+	display: inline-table;
+}
+
+.visualmodo-elements-infobox .infobox-icon img {
+	max-width: initial;
+}
+
+.visualmodo-elements-infobox .icon-infobox {
+	line-height: 0;
+}
+
+.visualmodo-elements-infobox .icon-infobox.outline-round,
+.visualmodo-elements-infobox .icon-infobox.outline-square,
+.visualmodo-elements-infobox .icon-infobox.outline-rounded {
+	border-width: 2px;
+	border-style: solid;
+}
+
+.visualmodo-elements-infobox .icon-infobox.round,
+.visualmodo-elements-infobox .icon-infobox.outline-round {
+	border-radius: 100%;
+}
+
+.visualmodo-elements-infobox .icon-infobox.rounded,
+.visualmodo-elements-infobox .icon-infobox.outline-rounded {
+	border-radius: 4px;
+}
+
+.visualmodo-elements-infobox .icon-infobox {
+	display: inline-block;
+	position: relative;
+	box-sizing: content-box;
+}
+
+.visualmodo-elements-infobox .icon-infobox .visualmodo-elements-infobox-icon-item {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
